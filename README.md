@@ -24,8 +24,7 @@ python3 webserver.py
 2. Open a web browser and enter the following URL:
 http://localhost:80/
 
-
-Replace `localhost` with the IP address or hostname of the machine running the server if needed.
+Note: Replace `localhost` with the IP address or hostname of the machine running the server if needed.
 
 3. The server will respond with the requested files or a "404 Not Found" error if the file is not found.
 
@@ -37,7 +36,7 @@ Replace `localhost` with the IP address or hostname of the machine running the s
 
 ## Customization
 
-You can customize the following in the `server.py` file:
+You can customize the following in the `webserver.py` file:
 
 - `serverPort`: Change the port number on which the server listens (default is 80).
 - Modify the code to handle other HTTP methods or add more advanced features as needed.
