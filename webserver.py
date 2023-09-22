@@ -1,6 +1,6 @@
 #import socket module
 from socket import *
-import sys # In order to terminate the program
+import sys 
 
 # Create a server socket
 serverSocket = socket(AF_INET, SOCK_STREAM)
@@ -18,7 +18,8 @@ while True:
     connectionSocket, addr = serverSocket.accept()
 
     try:
-        message = connectionSocket.recv(1024).decode()  # Receive the HTTP request message
+        # Receive the HTTP request message
+        message = connectionSocket.recv(1024).decode()  
         filename = message.split()[1]
         f = open(filename[1:])
         outputdata = f.read()
@@ -39,4 +40,4 @@ while True:
 
 # Close the server socket
 serverSocket.close()
-sys.exit()  # Terminate the program after serving
+sys.exit() 
